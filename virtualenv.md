@@ -18,3 +18,9 @@ workon
 ```
 workon 环境名
 ```
+
+### 退出
+
+```
+deactivate
+```
