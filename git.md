@@ -1,4 +1,4 @@
-# SSH Key 的设置，同样也适用于 Coding.net
+# SSH Key ，适用于 Coding.net
 
 ---
 
