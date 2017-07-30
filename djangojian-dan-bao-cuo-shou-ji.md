@@ -133,6 +133,7 @@ def getform(request):
 ```
 {% ifequal aaaab|slice:'4' 'aaaa' %}  aaaaaaa{% else %} bbbbbbb{% endifequal %}
 
-
-
+templates----->  action = "{ % url 'go_form' %}"      url.py------>url(r'^from_go/$, getform, name='go_form' )
 ```
+
+
