@@ -24,7 +24,12 @@ STATICFILES_DIRS = [
 ```
 注册app 到settings
 ```
+### 数据库同步出错
 
+python2 指定中文编码
+```
+# _*_ coding:utf-8 _*_
+```
 
 ### 连接到数据到数据库出错
 
@@ -52,4 +57,17 @@ Mark Directory as source root
 ### 简单流程梳理
 
 ![](/assets/2017-07-30_164152.png)
+
+### 常见的model类型
+
+```
+CharField
+IntergerField
+DateTimeField
+ImageField
+FileField
+IPAdreessField
+EmeialField
+ForeignKey
+```
 
