@@ -106,8 +106,9 @@ verbose_name_plural = verbose_name
 ```
 def getform(request):
     # all_messages = UserMessage.objects.filter(name='bobby')
+    # all_messages.delete()
     # for message in all_messages:
-    #     print message.email
+    #     message.delete()
     if request.method == 'POST':
         name = request.POST.get('name',)
         address = request.POST.get('address', )
