@@ -43,3 +43,7 @@ DATABASES = {
 Mark Directory as source root
 ```
 
+### 简单流程梳理
+
+![](/assets/2017-07-30_164152.png)
+
