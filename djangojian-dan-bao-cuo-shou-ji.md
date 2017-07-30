@@ -36,3 +36,10 @@ DATABASES = {
 }
 
 ```
+
+### 引入麻烦
+
+```
+Mark Directory as source root
+```
+
