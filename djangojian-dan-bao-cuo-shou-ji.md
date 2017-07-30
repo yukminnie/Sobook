@@ -92,9 +92,13 @@ object_id = models.CharField(max_length=50, default='', primary_key=Ture, verbos
 ```
 
 ### 关于Meta
-我们可以指定其数据库名，和字段排列方式
+我们可以指定其数据库名，和字段排列方式, 以及信息显示方式
 
 ```
 db_table = 'user_message'
 orderding = '-object_id'
+
+verbose_name_plural = verbose_name
 ```
+
+
