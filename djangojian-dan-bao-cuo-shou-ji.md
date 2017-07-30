@@ -128,3 +128,11 @@ def getform(request):
     return render(request, 'message_form.html')
 ```
 
+### 一些模版例子
+
+```
+{% ifequal aaaab|slice:'4' 'aaaa' %}  aaaaaaa{% else %} bbbbbbb{% endifequal %}
+
+
+
+```
