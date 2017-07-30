@@ -84,3 +84,17 @@ EmeialField
 ForeignKey
 ```
 
+### 关于主键
+数据库会自动添加id主键，我们也可以自定义主键,要有长度，要有默认值
+
+```
+object_id = models.CharField(max_length=50, default='', primary_key=Ture, verbose_name=u'主键')
+```
+
+### 关于Meta
+我们可以指定其数据库名，和字段排列方式
+
+```
+db_table = 'user_message'
+orderding = '-object_id'
+```
