@@ -19,8 +19,14 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 ```
+### 数据库同步无效
 
-### 插入数据到数据库出错
+```
+注册app 到settings
+```
+
+
+### 连接到数据到数据库出错
 
 先安装mysql-python
 
