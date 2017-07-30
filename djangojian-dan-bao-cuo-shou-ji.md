@@ -74,6 +74,9 @@ FileField
 
 BooleanField
 
+FieldDoesNotExist
+
+
 FilePathField
 URLField
 IPAdreessField
