@@ -101,4 +101,29 @@ orderding = '-object_id'
 verbose_name_plural = verbose_name
 ```
 
+### 前端输入保存数据库例子
+
+```
+def getform(request):
+    # all_messages = UserMessage.objects.filter(name='bobby')
+    # for message in all_messages:
+    #     print message.email
+    if request.method == 'POST':
+        name = request.POST.get('name',)
+        address = request.POST.get('address', )
+        message = request.POST.get('message', )
+        email = request.POST.get('email', )
+
+        user_message = UserMessage()
+
+        user_message.name = name
+        user_message.address = address
+        user_message.message = message
+        user_message.email = email
+        user_message.object_id = 'helloworld3'
+
+        user_message.save()
+
+    return render(request, 'message_form.html')
+```
 
