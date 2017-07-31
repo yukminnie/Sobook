@@ -2,7 +2,9 @@
 
 2.新建数据库，安装python-mysql，设置数据库连接，同步
 
-3.设置utf8编码，设计model，编写用户表集成于系统User表，重载user_model
+3.设置utf8编码
+
+4.设计model，编写用户表集成于系统User表
 
 ```
 from django.contrib.auth.models import AbstractUser
@@ -27,6 +29,12 @@ from django.contrib.auth.models import AbstractUser
 
 编写__unicode__方法
 
-AUTH_USER_MODEL = 'users.UserProfile'     重载UserProfile方法
+
 ```
 
+5.重载user_model（setting.py）
+
+```
+AUTH_USER_MODEL = 'users.UserProfile'     重载UserProfile方法
+
+```
