@@ -31,10 +31,19 @@ from django.contrib.auth.models import AbstractUser
 
 
 ```
+5.ImageField属性依赖pillow库，我们通过IDE安装
 
-5.重载user_model（setting.py）
+
+6.重载user_model（setting.py）
 
 ```
 AUTH_USER_MODEL = 'users.UserProfile'     重载UserProfile方法
 
 ```
+7.数据库同步
+
+```
+makemigrations
+migrate
+```
+8.至此，UserPorfile替换User成功
