@@ -4,7 +4,7 @@
 第二层：lesson.model video.model courseresource
 ```
 
-2.Course.model
+2.Course.model  课程
 
 ```
 name  课程名字charfield  
@@ -22,4 +22,10 @@ MeTa
 
 ```
 
-3.
+3.lesson
+
+```
+course = models.ForeignKey(Course, verbose_name =u'课程')
+
+
+```
