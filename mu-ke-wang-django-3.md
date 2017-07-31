@@ -25,7 +25,39 @@ MeTa
 3.lesson
 
 ```
-course = models.ForeignKey(Course, verbose_name =u'课程')
+course = models.ForeignKey(Course, verbose_name=u'课程')
+name = models.CharField(max_length=100, verbose_name=u'章节')
+add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
+
+class MeTa:
+    verbose_name = u'课程章节'
+    verbose_name_plural = verbose_name
+
+```
+
+4.video
+
+```
+lesson = models.ForeignKey(Lesson, verbose_name=u'章节')
+name = models.CharField(max_length=100, verbose_name=u'视频名称')
+add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
+
+class MeTa:
+    verbose_name = u'视频'
+    verbose_name_plural = verbose_name
+
+```
+
+5.courseresource
+```
+course = models.ForeignKey(Course, verbose_name=u'课程')
+name = models.CharField(max_length=100, verbose_name=u'课程资源')
+add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
+download = models.FileField(upload_to='course/resource/%Y/%m', verbose_name=u'资源文件', max_length=100 )
+
+class MeTa:
+    verbose_name = u'课程资源'
+    verbose_name_plural = verbose_name
 
 
 ```
