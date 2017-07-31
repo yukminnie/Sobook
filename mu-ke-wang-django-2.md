@@ -40,5 +40,11 @@ add_time 添加时间 DateTimeField default
 
 MeTa
 ```
+6.数据库同步
+
+```
+makemigrations
+migrate
+```
 
 
