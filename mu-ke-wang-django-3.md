@@ -1,4 +1,4 @@
-1.user 同级目录建立course 目录
+1.user 同级生成course app，setting中注册
 ```
 第一层：course.model
 第二层：lesson.model video.model courseresource
