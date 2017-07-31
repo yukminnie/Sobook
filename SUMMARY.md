@@ -8,4 +8,5 @@
 * [Python共存](pythongong-cun.md)
 * [Virtualenv](virtualenv.md)
 * [django简单报错收集](djangojian-dan-bao-cuo-shou-ji.md)
+* [慕课网django](mu-ke-wang-django.md)
 
