@@ -6,7 +6,7 @@ search for references    搜索相关引用   去除
 open moved files in eitor    打开移动的文件   去除
 ```
 
-2.将apps目录mark as sources root,此时IDE不会报错,但是外部命令行manage.py会报错,我们引入settings设置
+2.将apps目录mark as sources root,此时IDE不会报错,但是外部命令行runserver会报错,我们引入settings设置
 
 
 3.settings设置,将apps设置为根目录第一顺位

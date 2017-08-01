@@ -24,9 +24,11 @@ django.contrib.staticfiles
 
 ```
 #报错(查明应该是自定义长度和数据本身不符,来源于gender(famale 女)
-data too long for column,修改完成要进行数据库同步)
+data too long for column,修改完成要进行数据库同步
 
-#修改后再次出错(因为应用都被拖入apps中,我们已经设置了source root,)
+#修改后同步,可能报错,也可能不报错
+
+报错原因:合并app之前进行的数据库同步
 
 
 
