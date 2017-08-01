@@ -24,3 +24,7 @@ migrate
 
 7.我们建立extra_apps package目录,通过它管理第三方插件包,然后我们拖入admin,并mark source root
 
+8.此时我们可以通过项目引用xadmin,我们卸载admin
+
+9.
+
