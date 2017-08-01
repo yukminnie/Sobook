@@ -14,4 +14,5 @@
 * [慕课网django-4-organization——model设计](mu-ke-wang-django-4.md)
 * [慕课网django-5-operation\_model设计](mu-ke-wang-django-5.md)
 * [慕课网django-6-app目录建立以及setting设置](mu-ke-wang-django-6.md)
+* [慕课网django-7](mu-ke-wang-django-7.md)
 
