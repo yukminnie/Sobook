@@ -33,3 +33,13 @@ sql-mode=”STRICT_TRANS_TABLES,NO_AUTO_Create_USER,NO_ENGINE "中的stric_trans
   return self.cursor.execute(query, args)
 ```
 
+4.更改中文
+
+```
+LANGUAGE_CODE = 'zh-hans'    
+
+TIME_ZONE = 'Asia/Shanghai'
+
+USE_TZ = False      #关闭utc时区
+
+```
