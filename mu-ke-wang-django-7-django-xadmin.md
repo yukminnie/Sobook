@@ -5,7 +5,7 @@
 3.admin中删除之前注册的model
 
 ```
-注意,此时虽然我们删除了UserProfile,但是xadmin仍然会发现它,并将它插入后台
+注意,此时虽然我们删除了UserProfile,但是xadmin仍然会发现它,并将它注册到后台
 ```
 
 4.urls中插入xadmin,修改xadmin.site.url
