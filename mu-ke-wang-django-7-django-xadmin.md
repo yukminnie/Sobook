@@ -9,6 +9,9 @@
 5.xadmin安装成功后,会存在一些默认的表,我们对xadmin进行数据库同步
 
 ```
+存在三张表:
+bookmark, usersettings, userwidget
+
 makemigrations
 migrate
 ```
