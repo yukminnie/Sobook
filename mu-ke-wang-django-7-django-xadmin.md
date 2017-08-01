@@ -6,5 +6,10 @@
 
 4.urls中插入xadmin,修改xadmin.site.url
 
-5.
+5.对xadmin进行数据库同步
+
+```
+makemigrations
+migrate
+```
 
