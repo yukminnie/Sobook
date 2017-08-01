@@ -20,3 +20,7 @@ makemigrations
 migrate
 ```
 
+6.我们通过git下载xadmin,我们将解压后的xadmin文件夹,复制到项目根目录之下
+
+7.我们建立extra_apps package目录,通过它管理第三方插件包,然后我们将xadmin复制进来
+
