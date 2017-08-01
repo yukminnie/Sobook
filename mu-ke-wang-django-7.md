@@ -23,12 +23,16 @@ django.contrib.staticfiles
 3.createsuperuser报错
 
 ```
-#报错
-data too long for column(查明应该是自定义长度和数据本身不符,来源于gender(famale 女),修改完成要进行数据库同步)
+#报错(查明应该是自定义长度和数据本身不符,来源于gender(famale 女)
+data too long for column,修改完成要进行数据库同步)
+
+#修改后再次出错(因为应用都被拖入apps中,我们已经设置了source root,)
+
+
 
 sql-mode=”STRICT_TRANS_TABLES,NO_AUTO_Create_USER,NO_ENGINE "中的stric_trans_tables去掉，关闭严格模式，重启数据库
 
-#报错，不管了
+#报错，不管了(应该是和第一个报错原因一致)
  Warning: Data truncated for column 'gender' at row 1
   return self.cursor.execute(query, args)
 ```
