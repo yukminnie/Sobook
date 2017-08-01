@@ -24,7 +24,7 @@ django.contrib.staticfiles
 
 ```
 #报错
-data too long for column(查明应该是自定义长度和数据本身不符  来源于gender(famale 女))
+data too long for column(查明应该是自定义长度和数据本身不符,来源于gender(famale 女),注意数据库同步)
 
 sql-mode=”STRICT_TRANS_TABLES,NO_AUTO_Create_USER,NO_ENGINE "中的stric_trans_tables去掉，关闭严格模式，重启数据库
 
@@ -44,6 +44,15 @@ USE_TZ = False      #关闭utc时区
 
 ```
 
+5.注册model并为model定义管理器
+
 ```
+from .models import UserProfile
+
+
+class UserProfileAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(UserProfile, UserProfileAdmin)
 
 ```
