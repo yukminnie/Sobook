@@ -15,5 +15,5 @@
 * [慕课网django-5-operation\_model设计](mu-ke-wang-django-5.md)
 * [慕课网django-6-app目录建立以及setting设置](mu-ke-wang-django-6.md)
 * [慕课网django-7-自带admin介绍](mu-ke-wang-django-7.md)
-* [慕课网django-7-django-xadmin](mu-ke-wang-django-7-django-xadmin.md)
+* [慕课网django-8-django-xadmin](mu-ke-wang-django-7-django-xadmin.md)
 
