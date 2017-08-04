@@ -35,4 +35,38 @@ future   看介绍是用于python3支持python2的
 six      这名字真特么清新脱俗,怎么想的都
 ```
 
-11.
+11.我们在各个admin类同级别中新建adminx.py,然后对各个model进行注册
+
+```
+import xadmin
+
+from .models import EmailVerifyRecord
+
+
+class EmailVerifyRecordAdmin(object):
+    pass
+
+xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
