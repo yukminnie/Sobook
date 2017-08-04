@@ -48,8 +48,17 @@ class EmailVerifyRecordAdmin(object):
 
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 ```
+12.关于verbose_name_plural
 
+```
+是verbose_name的复数形式,不添加后,后台模块名称会加上s
+```
+13.我们在邮箱模块下进行添加操作,可能会出错
 
+```
+出错原因,因为我们卸载了系统中的xadmin之前进行了makemigrations,如果我们用源码进行了makemigrations,则会比原数据库增加一张xamdin_lob表
+```
+14.
 
 
 
