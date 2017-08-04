@@ -78,7 +78,7 @@ xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 class EmailVerifyRecordAdmin(object):
     list_display = ['code', 'email', 'send_type', 'send_time']
 ```
-17.定义搜索和过滤器
+17.定义搜索和过滤器,注意,我们通常不对model中的数据进行实践搜索,但是可以在过滤器中进行时间搜索
 
 ```
 class EmailVerifyRecordAdmin(object):
