@@ -58,7 +58,27 @@ xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 ```
 出错原因,因为我们卸载了系统中的xadmin之前进行了makemigrations,如果我们用源码进行了makemigrations,则会比原数据库增加一张xamdin_lob表
 ```
-14.
+14.在同步的时候,会提示找不到xadmin
+
+```
+我们在setting.py中增加extra_app目录,想app目录一样
+```
+
+15.重载email类的unicode方法,后台界面在做类string的时候,会调用这个方法,不然会显示object的字符串
+
+```
+    def __unicode__(self):
+        return '{0}({1})'.format(self.code, self.email)
+```
+16.自定义显示列,可以使用数组,可以使用元祖,但是后者在队列中只有一个数据的时候,必须加上逗号
+
+```
+#在adminx.py中
+
+class EmailVerifyRecordAdmin(object):
+    list_display = ['code', 'email', 'send_type', 'send_time']
+```
+
 
 
 
