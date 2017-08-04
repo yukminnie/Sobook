@@ -87,6 +87,12 @@ class EmailVerifyRecordAdmin(object):
     list_filter = ['code', 'email', 'send_type', 'send_time']
 ```
 
+18.后续疯狂添加,发现一个bug
+
+```
+在定义了MeTa信息的时候,verbose_name被错误添加了u''信息,此时是不需要u''前缀的,在我改回来后,后台并不会生效,除非删掉重来
+```
+
 
 
 
