@@ -1,4 +1,4 @@
-1.开启主题
+1.开启主题,此时主题没有生效,猜测是因为使用了本地xadmin的缘故
 
 ```
 from xadmin import views
