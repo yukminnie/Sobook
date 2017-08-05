@@ -64,7 +64,7 @@ xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 我们在setting.py中增加extra_app目录,想app目录一样
 ```
 
-15.重载email类的unicode方法,后台界面在做类string的时候,会调用这个方法,不然会显示object的字符串
+15.重载email类的unicode方法,后台界面在做类string的时候,会调用这个方法,不然会显示object的字符串,基本上都需要重载,尤其是作为其他字段的主键的时候,不重载大家都显示object字符串
 
 ```
     def __unicode__(self):

@@ -7,3 +7,4 @@ class LessonAdmin(object):
     search_fields = ['course', 'name']
 
 ```
+2.
