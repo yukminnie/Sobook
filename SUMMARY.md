@@ -17,4 +17,5 @@
 * [慕课网django-7-自带admin介绍](mu-ke-wang-django-7.md)
 * [慕课网django-8-django-xadmin](mu-ke-wang-django-7-django-xadmin.md)
 * [慕课网django-9-xadmin](mu-ke-wang-django-9-xadmin.md)
+* [慕课网django-10-xadmin全局修改](mu-ke-wang-django-10-xadmin-quan-ju-xiu-gai.md)
 
