@@ -9,4 +9,5 @@
 * [Virtualenv](virtualenv.md)
 * [django简单报错收集](djangojian-dan-bao-cuo-shou-ji.md)
 * [Redis](redis.md)
+* [Mysql](mysql.md)
 
