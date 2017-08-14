@@ -60,7 +60,6 @@ show dbs
 
 使用
 use local
-
 ```
 
 ---
@@ -74,6 +73,11 @@ use local
 ```
 安装
 homebrew install mongodb
+
+首先会自动安装 openssl 依赖
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
 ```
 
 
