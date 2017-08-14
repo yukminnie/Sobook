@@ -31,7 +31,6 @@ sudo service redis restart
 
 启动密码进入
 redis-cli -a <mypassword>
-
 ```
 
 # mac
@@ -53,10 +52,7 @@ brew services list
 
 重启 redis
 brew services restart redis
-
 ```
-
-
 
 # win
 

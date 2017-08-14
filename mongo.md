@@ -78,7 +78,7 @@ homebrew install mongodb
 
 If you need to have this software first in your PATH run:
   echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
-  
+
 一波三折,懂得都懂
 
 启动服务
@@ -86,6 +86,15 @@ brew services start mongodb
 
 进行操作
 mongo
+
+使用 brew info mongodb,提示
+
+To have launchd start mongodb now and restart at login:
+  brew services start mongodb
+Or, if you don't want/need a background service you can just run:
+  mongod --config /usr/local/etc/mongod.conf
+  
+启动服务,对 mongod.conf 进行配置,完
 ```
 
 
