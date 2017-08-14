@@ -1,10 +1,10 @@
 # win
 
- 
-
 ---
 
+```
 不说了
+```
 
 # linux
 
@@ -32,7 +32,6 @@ bindadress
 
 重启
 sudo service mysql restart
-
 ```
 
 # mac
