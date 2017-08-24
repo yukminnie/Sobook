@@ -11,4 +11,5 @@
 * [Redis](redis.md)
 * [Mysql](mysql.md)
 * [Cmder](cmder.md)
+* [other](other.md)
 
