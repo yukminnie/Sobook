@@ -63,6 +63,7 @@ sudo vim /etc/sudoers
 wq!保存只读文件
 
 
+^ud%Pj0LmcdpDY13gJ
 ```
 
 
