@@ -63,7 +63,13 @@ sudo vim /etc/sudoers
 wq!保存只读文件
 
 
-^ud%Pj0LmcdpDY13gJ
+
+
+文件权限临时关闭,结束后重新打开
+
+chmod -R 777 <DIR>
+
+chmod -R 644 <DIR>
 ```
 
 
