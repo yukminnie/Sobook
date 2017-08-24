@@ -39,8 +39,8 @@ linux启动步骤
         Ubuntu 系统默认使用 GDM 作为登录管理器,您在登录管理器界面中
         输入用户名和密码后,便可以登录系统。(您可以在 /etc/rc3.d/
         文件夹中找到一个名为 S13gdm 的链接)
-        
-        
+
+
 ps：在Debian Linux中，下列路径对应不同的运行级别。当系统启动时，通过其中的脚本文件来启动相应的服务。 
 /etc/rc0.d Run level 0 
 /etc/rc1.d Run level 1 
@@ -51,6 +51,12 @@ ps：在Debian Linux中，下列路径对应不同的运行级别。当系统启
 /etc/rc6.d Run level 6 
 
 Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的文件，从而禁止某些服务启动
+
+unable to resolve host 报错
+
+127.0.0.1 localhost <主机名>
+
+
 ```
 
 
