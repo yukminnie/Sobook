@@ -3,7 +3,15 @@
 ---
 
 ```
-不说了
+一些报错整理：
+1.查看mysql配置文件目录
+select @@mysqldir
+
+2.connector/odbc 安装失败
+缺少常用运行库
+
+3.客户端连接mysql报错1042
+netsh winsock reset
 ```
 
 # linux
