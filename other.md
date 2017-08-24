@@ -56,6 +56,12 @@ unable to resolve host 报错
 
 127.0.0.1 localhost <主机名>
 
+添加用户
+
+sudo adduser <name>
+sudo vim /etc/sudoers
+wq!保存只读文件
+
 
 ```
 
