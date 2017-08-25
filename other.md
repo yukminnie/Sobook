@@ -75,6 +75,10 @@ kpkg资源被锁安装无法进行
 
 sudo rm /var/cache/apt/archives/lock
 sudo rm /var/lib/dpkg/lock
+
+复制文件夹
+
+ cp -R 源目录/* 目地目录
 ```
 
 
