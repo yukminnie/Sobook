@@ -70,6 +70,11 @@ wq!保存只读文件
 chmod -R 777 <DIR>
 
 chmod -R 644 <DIR>
+
+kpkg资源被锁安装无法进行
+
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
 ```
 
 
