@@ -52,33 +52,38 @@ ps：在Debian Linux中，下列路径对应不同的运行级别。当系统启
 
 Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的文件，从而禁止某些服务启动
 
-unable to resolve host 报错
+6. unable to resolve host 报错
 
-127.0.0.1 localhost <主机名>
+        127.0.0.1 localhost <主机名>
 
-添加用户
+7. 添加用户
 
-sudo adduser <name>
-sudo vim /etc/sudoers
-wq!保存只读文件
-
-
+        sudo adduser <name>
+        sudo vim /etc/sudoers
+        wq!保存只读文件
 
 
-文件权限临时关闭,结束后重新打开
+8. 文件权限临时关闭,结束后重新打开
 
-chmod -R 777 <DIR>
+        chmod -R 777 <DIR>
 
-chmod -R 644 <DIR>
+        chmod -R 644 <DIR>
 
-kpkg资源被锁安装无法进行
+9. kpkg资源被锁安装无法进行
 
-sudo rm /var/cache/apt/archives/lock
-sudo rm /var/lib/dpkg/lock
+        sudo rm /var/cache/apt/archives/lock
+        sudo rm /var/lib/dpkg/lock
 
-复制文件夹
+9. 完整复制文件夹
 
- cp -R 源目录/* 目地目录
+        cp -R 源目录/* 目地目录
+        
+10. NPM gets killed no matter what
+
+11. ubuntu更新报错 dpkg was interrupted
+        
+        cd /var/lib/dpkg/updates
+        
 ```
 
 
