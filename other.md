@@ -59,8 +59,7 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
 7. 添加用户
 
         sudo adduser <name>
-        sudo vim /etc/sudoers
-        wq!保存只读文件
+       usermod -aG sudo ghost
 
 
 8. 文件权限临时关闭,结束后重新打开
@@ -68,6 +67,8 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
         chmod -R 777 <DIR>
 
         chmod -R 644 <DIR>
+        
+        sudo chown user:user /data/wwwroot/ghost
 
 9. kpkg资源被锁安装无法进行
 
@@ -79,7 +80,7 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
         cp -R 源目录/* 目地目录
 
 10. NPM gets killed no matter what，内存不足
-        
+
         dd if=/dev/zero of=/var/swap bs=1k count=1024k
         mkswap /var/swap
         swapon /var/swap
@@ -91,6 +92,18 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
         rm -rf *
         sudo apt-get upgrade
         sudo apt-get update
+12. npm v6 安装
+
+        curl -sL https://deb.nodesource.com/setup_6.x | bash -  
+        apt-get install nodejs
+        
+13. npm淘宝源
+        npm --registry https://registry.npm.taobao.org info underscore  
+        
+
+14. yarn
+        curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+        echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 ```
 
 
