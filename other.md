@@ -77,12 +77,44 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
 9. 完整复制文件夹
 
         cp -R 源目录/* 目地目录
-        
+
 10. NPM gets killed no matter what
 
 11. ubuntu更新报错 dpkg was interrupted
-        
+
         cd /var/lib/dpkg/updates
+        rm -rf *
+        sudo apt-get upgrade
+        sudo apt-get update
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
 ```
 
