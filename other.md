@@ -78,7 +78,12 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
 
         cp -R 源目录/* 目地目录
 
-10. NPM gets killed no matter what
+10. NPM gets killed no matter what，内存不足
+        
+        dd if=/dev/zero of=/var/swap bs=1k count=1024k
+        mkswap /var/swap
+        swapon /var/swap
+        echo '/var/swap swap swap default 0 0' >> /etc/fstab
 
 11. ubuntu更新报错 dpkg was interrupted
 
@@ -86,36 +91,6 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
         rm -rf *
         sudo apt-get upgrade
         sudo apt-get update
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 ```
 
 
