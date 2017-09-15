@@ -12,4 +12,5 @@
 * [Mysql](mysql.md)
 * [Cmder](cmder.md)
 * [other](other.md)
+* [re](re.md)
 
