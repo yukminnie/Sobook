@@ -12,12 +12,11 @@
 8. range和xrange
 9. 字符串
 
-1. ```
-   'he\'s sad'
-   b = repr("he is happy \n Yes")
-   ```
-
-10. 布尔值
+10. ```
+    'he\'s sad'
+    b = repr("he is happy \n Yes")
+    ```
+11. 布尔值
 
 ```
 下列值表示false：
@@ -26,6 +25,12 @@ False
 任何表示0的数字类型
 任何空序列
 任何空映射
+```
+
+12. 深浅拷贝
+
+```
+copy
 ```
 
 
