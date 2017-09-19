@@ -9,11 +9,24 @@
 6. 用户输入
    `s = input(''asd")`
 7. break 和 continue
-8. renge和xrange
-9. 
+8. range和xrange
+9. 字符串
 
+1. ```
+   'he\'s sad'
+   b = repr("he is happy \n Yes")
+   ```
 
+10. 布尔值
 
+```
+下列值表示false：
+None
+False
+任何表示0的数字类型
+任何空序列
+任何空映射
+```
 
 
 
