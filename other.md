@@ -67,7 +67,7 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
         chmod -R 777 <DIR>
 
         chmod -R 644 <DIR>
-        
+
         sudo chown user:user /data/wwwroot/ghost
 
 9. kpkg资源被锁安装无法进行
@@ -96,12 +96,15 @@ Ubuntu默认是在runlevel 2启动的，那么我们之需要修改rc2.d中的�
 
         curl -sL https://deb.nodesource.com/setup_6.x | bash -  
         apt-get install nodejs
-        
+
 13. npm淘宝源
         npm --registry https://registry.npm.taobao.org info underscore  
         
+14. 修改源地址为官方源
+        npm config set registry https://registry.npmjs.org/        
 
-14. yarn
+
+15. yarn
         curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
         echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 ```
